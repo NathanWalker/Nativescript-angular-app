@@ -1,0 +1,15 @@
+<!-- 
+    <StackLayout>
+    <ListView [items]="items"  (loaded)="onListViewLoaded($event)" (loadMoreItems)="loadMoreItems($event)">
+        <ng-template let-item="item">
+            <StackLayout>
+                <Label [nsRouterLink]="['/item', item.id]" [text]="item.name"></Label>
+            </StackLayout>
+        </ng-template>
+    </ListView> -->
+    <!-- <TextField  hint="add text"></TextField> -->
+<!-- </StackLayout> -->
+    <StackLayout [formGroup]="formLogin">
+        <TextField formControlName="emailAddress" hint="add text"></TextField>
+        <Button text="Click" (tap)="click()"></Button>
+    </StackLayout>
