@@ -6,7 +6,9 @@ Steps followed to create the project:
 - Created angular 10 project using command ng new app-name
 - Migrated project to nativescript with [using this guid](https://docs.nativescript.org/angular/code-sharing/migrating-a-web-project) . 
  npm install --global @angular/cli
+ 
  npm install --global nativescript
+ 
  ng add @nativescript/schematics
  
  - Along with auto generated component .I have created another component.
