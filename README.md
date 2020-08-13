@@ -4,7 +4,8 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Steps followed to create the project:
 - Created angular 10 project using command ng new app-name
-- Migrated project to nativescript  [using this guide](https://docs.nativescript.org/angular/code-sharing/migrating-a-web-project) . 
+- Migrated project to nativescript  [using this guide](https://docs.nativescript.org/angular/code-sharing/migrating-a-web-project).
+
  npm install --global @angular/cli
  
  npm install --global nativescript
