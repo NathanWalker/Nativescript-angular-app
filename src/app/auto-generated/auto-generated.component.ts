@@ -3,6 +3,7 @@ import { FormGroup, FormBuilder, Validators, FormControl } from '@angular/forms'
 
 import { ListView, isIOS } from '@nativescript/core';
 import { Router } from '@angular/router';
+import { RouterExtensions } from '@nativescript/angular';
 // require('nativescript-websockets');
 
 
@@ -50,8 +51,10 @@ public items1 = new Array<any>(
   { id: 32, name: "A. Iniesta", role: "Midfielder" },
 );
   public formLogin:FormGroup;
+  showTwo = false;
+
   constructor(
-    private route:  Router,
+    private routeExt:  RouterExtensions,
     private formBuilder: FormBuilder,
   ) { }
 
@@ -64,8 +67,11 @@ public items1 = new Array<any>(
 		}
 
   public click(){
-    console.log(this.formLogin.value.emailAddress);
-    this.route.navigate(['/item']);
+    console.log(this.formLogin.value);
+    this.routeExt.navigate(['/item']);
+
+    // can confirm stacklayout ngIf issue with orderering is fixed (fixed with 10.1.3)
+    // this.showTwo = !this.showTwo;
   }
 
 }

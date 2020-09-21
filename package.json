@@ -2,12 +2,10 @@
   "name": "angularapp-v10",
   "version": "0.0.0",
   "scripts": {
-    "android": "tns run android --no-hmr",
-    "ios": "tns run ios --no-hmr",
-    "mobile": "tns run",
-    "preview": "tns preview",
-    "ngcc": "ngcc --properties es2015 module main --first-only",
-    "postinstall": "npm run ngcc",
+    "android": "ns debug android --no-hmr",
+    "ios": "ns debug ios --no-hmr",
+    "mobile": "ns debug",
+    "preview": "ns preview",
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
@@ -17,30 +15,31 @@
   },
   "private": true,
   "dependencies": {
-    "@angular/animations": "~10.0.6",
-    "@angular/common": "~10.0.6",
-    "@angular/compiler": "~10.0.6",
-    "@angular/core": "~10.0.6",
-    "@angular/forms": "~10.0.6",
-    "@angular/platform-browser": "~10.0.6",
-    "@angular/platform-browser-dynamic": "~10.0.6",
-    "@angular/router": "~10.0.6",
-    "@nativescript/angular": "~10.0.0",
-    "@nativescript/core": "rc",
-    "@nativescript/theme": "~2.2.1",
+    "@angular/animations": "~10.1.0",
+    "@angular/common": "~10.1.0",
+    "@angular/compiler": "~10.1.0",
+    "@angular/core": "~10.1.0",
+    "@angular/forms": "~10.1.0",
+    "@angular/platform-browser": "~10.1.0",
+    "@angular/platform-browser-dynamic": "~10.1.0",
+    "@angular/router": "~10.1.0",
+    "@nativescript/angular": "10.1.2",
+    "@nativescript/core": "~7.0.0",
+    "@nativescript/theme": "~2.5.0",
     "nativescript-websockets": "^1.5.5",
     "reflect-metadata": "~0.1.12",
-    "rxjs": "~6.5.5",
+    "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
-    "zone.js": "~0.10.3"
+    "zone.js": "~0.11.1"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "~0.1000.5",
-    "@angular/cli": "~10.0.5",
-    "@angular/compiler-cli": "~10.0.6",
-    "@nativescript/schematics": "^10.0.2",
+    "@angular-devkit/build-angular": "~0.1001.0",
+    "@angular/cli": "~10.1.0",
+    "@angular/compiler-cli": "~10.1.0",
+    "@nativescript/ios": "7.0.0",
+    "@nativescript/schematics": "^10.1.0",
     "@nativescript/tslint-rules": "~0.0.5",
-    "@nativescript/webpack": "~2.0.0",
+    "@nativescript/webpack": "~3.0.0",
     "@types/jasmine": "~3.5.0",
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "^12.11.1",
@@ -52,19 +51,10 @@
     "karma-coverage-istanbul-reporter": "~3.0.2",
     "karma-jasmine": "~3.3.0",
     "karma-jasmine-html-reporter": "^1.5.0",
-    "nativescript-dev-webpack": "^1.5.1",
     "protractor": "~7.0.0",
     "ts-node": "~8.3.0",
     "tslint": "~6.1.0",
     "typescript": "~3.9.5"
   },
-  "nativescript": {
-    "id": "org.nativescript.ngsample",
-    "tns-ios": {
-      "version": "6.5.2"
-    },
-    "tns-android": {
-      "version": "6.5.3"
-    }
-  }
+  "main": "main.tns.js"
 }

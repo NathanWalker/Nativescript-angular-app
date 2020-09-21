@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators, FormControl } from '@angular/forms';
 import { RouterExtensions, TextView } from '@nativescript/angular';
-import { EventData } from '@nativescript/core/data/observable';
 
 @Component({
   selector: 'app-item',
@@ -21,7 +20,7 @@ export class ItemComponent implements OnInit {
   ngOnInit() {
 
     this.formSecond = this.formBuilder.group({
-      textField:new FormControl('', [Validators.required]),
+      firstName:new FormControl('', [Validators.required]),
     });
     // this.formSecond = new FormGroup({
     //   emailAddress:new FormControl(null),
@@ -29,9 +28,7 @@ export class ItemComponent implements OnInit {
   }
 
   public click(){
-    console.log(this.name);
-    console.log(this.formSecond);
-    console.log(this.formSecond.value.textField);
+    console.log(this.formSecond.value)
   }
 
 

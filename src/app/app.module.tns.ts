@@ -14,6 +14,7 @@ import { ItemComponent } from '@src/app/item/item.component';
   ],
   imports: [
     NativeScriptModule,
+    NativeScriptCommonModule,
     NativeScriptFormsModule,
     AppRoutingModule,
     ReactiveFormsModule,
